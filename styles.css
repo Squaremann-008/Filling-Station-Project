@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f6f6f6;
+  }
+  
+  nav {
+    background-color: #82c341;
+    padding: 10px;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  header {
+    background-image: url("images/background-image.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+    
+  main {
+    padding: 50px;
+  }
+  
+  section.gas-types {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .gas-card {
+    padding: 40px;
+    text-align: center;
+    background-color: #f9ede4;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 20px; /* Increased border radius for rounded corners */
+  }
+  
+  .gas-card h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #e68b34;
+  }
+  
+  .gas-card:hover {
+    background-color: #fad4bf;
+  }
+  
+  footer {
+    background-color: #f3eac2;
+    padding: 30px 0;
+    text-align: center;
+  }
+  
+  .contact-info {
+    color: #ad7e3c;
+  }
+  
+  .contact-info h3 {
+    margin-bottom: 10px;
+  }
+  
+  .contact-info p {
+    margin: 0;
+  }
+  .services, .about-us {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .services img, .about-us img {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* ... Previous CSS rules ... */
+  
+  .welcome-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+  
+  /* Hover effect for the header background */
+  .header-background:hover {
+    background-image: url("images/header-image-hover.jpg");
+  }
+  
+  /* ... Previous CSS rules ... */
+
+/* Style for the form popup */
+.form-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background: #f9ede4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .form-container {
+    max-width: 400px;
+  }
+  
+  .form-container h2 {
+    text-align: center;
+  }
+  
+  .form-container label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .form-container input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-container button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .form-container .submit-btn {
+    background-color: #82c341;
+    color: white;
+  }
+  
+  .form-container .cancel-btn {
+    background-color: #ef1505;
+    color: white;
+    margin-right: 10px;
+  }
+  
+  /* Style for the overlay when the form is open */
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  

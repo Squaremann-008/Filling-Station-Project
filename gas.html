@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gas Station - Fuel Types</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gas.html" id="buyPetrol">Buy Now </a></li>
+      </ul>
+    </nav>
+
+    <header>
+      <div class="welcome-message">
+        <h1>Welcome to Our Gas Station</h1>
+        <p>Quality Fuels for Your Vehicles</p>
+      </div>
+    </header>
+
+    <main>
+      <section class="gas-types">
+        <a href="#petrol" class="gas-card petrol" onclick="openForm1()">
+          <h2>Petrol</h2>
+        </a>
+        <a href="#diesel" class="gas-card diesel">
+          <h2>Diesel</h2>
+        </a>
+        <a href="#kero" class="gas-card kero">
+          <h2>Kero</h2>
+        </a>
+        <a href="#gas" class="gas-card gas">
+          <h2>Gas</h2>
+        </a>
+        <a href="#oil" class="gas-card oil">
+          <h2>Oil</h2>
+        </a>
+        <a href="#others" class="gas-card others">
+          <h2>Others</h2>
+        </a>
+      </section>
+
+      <div class="form-popup" id="petrolForm">
+        <form action="#" class="form-container" id="paymentForm">
+          <h2>Petrol Order Form</h2>
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" required />
+
+          <label for="email">Email Address</label>
+          <input type="email" id="email-address" required />
+
+          <label for="litres">Number of Litres</label>
+          <input type="number" id="litres" required />
+
+          <label for="amount">Amount (in NGN)</label>
+          <input type="text" id="amount" disabled />
+
+          <button type="button" class="cancel-btn" onclick="closeForm()">
+            Cancel
+          </button>
+          <button type="submit" class="submit-btn" onclick="payWithPaystack()", onclick="closeForm()">
+            Pay
+          </button>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <div class="contact-info">
+        <h3>Contact Information:</h3>
+        <p>
+          Gas Station | Address: 123 Gas Ave, City | Phone: (555) 123-4567 |
+          Email: info@gasstation.com
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="payment.js"></script>
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+  </body>
+</html>

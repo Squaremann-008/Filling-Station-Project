@@ -27,7 +27,7 @@ body {
   }
   
   header {
-    background-image: url("images/background-image.jpg");
+    background-image: url("/images/background-image.jpg");
     background-size: cover;
     background-position: center;
     height: 500px;
@@ -73,7 +73,7 @@ body {
   }
   
   .contact-info {
-    color: #ad7e3c;
+    color: #f8960e;
   }
   
   .contact-info h3 {
@@ -106,7 +106,7 @@ body {
   
   /* Hover effect for the header background */
   .header-background:hover {
-    background-image: url("images/header-image-hover.jpg");
+    background-image: url("header-image-hover.jpg");
   }
   
   /* ... Previous CSS rules ... */
